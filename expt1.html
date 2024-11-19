@@ -1,70 +1,73 @@
 <html>
 <head>
-<title>HTML Tags demonstration</title>
+ <title>math function</title>
 </head>
-<body bgcolor="#d9abb9" >
- <h1><center>This is an H1 heading.</center></h1>
- <h2>This is an H2 heading.</h2>
- <h3>This is an H3 heading.</h3>
-
-<p>This is a simple paragraph of text.HTML tags are the fundamental elements of HTML used for defining the structure of the document. These are letters or words enclosed by angle brackets (< and >).Usually, most of the HTML tags contain an opening and a closing tag. Each tag has a different meaning, and the browser reads the tags and displays the contents enclosed by them accordingly.You can also add <strong>bold </strong> or <em>italic</em> text.</p>
-
-<p>
- Here is an <b>image</b>: </p>
- <br><br> 
- <center> 
- <img src="/home/ksb/Aneesa/web/html/img1.jpg" alt="sample image" width="300" hieght="300" >
- </center>
+<body bgcolor="brown">
+ <h1 >STRING FUNCTION</h1>
+ </body>
  
- <br>
+<script>
+ var a="Hey there";
+ var b="look here";
  
- <h2>UNORDERED LIST</h2>
- <ul type="disk">
-     <li><i>Item one</i></li>
-     <li><i>Item two</i></li>
-     <li><i>Item three</i></li>
- </ul>
  
-<hr>
+ 
+ 
+ document.write("STRING='Hey there,look here!'");
+ document.write("<br><br>");
+ document.write("Length:",a.length);
+ document.write("<br><br>");
+ document.write("Concatenation:",a.concat(" ",b));
+ document.write("<br><br>");
+ document.write("Replace:",a.replace("there","stop"));
+ document.write("<br><br>");
+ document.write("Uppercase:",b.toUpperCase());
+ document.write("<br><br>");
+ document.write("Lowercase:",a.toLowerCase());
+ document.write("<br><br>");
+ document.write("Index of Hey:",a.indexOf("Hey"));
+ document.write("<br><br>");
+ document.write("Last index of here!:",b.lastIndexOf("here!"));
+ document.write("<br><br>");
+ document.write("Substring using slice:",a.slice(4,10));
+ document.write("<br><br>");
+ document.write("substring using substr:",a.substr(4,3));
+ 
+ 
+ document.write("<br><br>");
+</SCRIPT>
 
-<h2><u>ORDERED LIST</u></h2>
-<ol>
-    <li>First item</li>
-    <li>Second item</li>
-    <li>Third item</li>
-</ol>
+<h1>MATH FUNCTION</H1>
+<SCRIPT>
+var x=241.5;
 
-<br>
-<hr>
-
-<table border="1" cell spacing="0" cell padding="10" >
-<caption><strong>Table example</strong></caption>
-<tr>
-    <th style="color:red;">COLOUMN 1 HEADER</th>
-    <th style="color:red;">COLOUMN 2 HEADER</th>
-    <th style="color:red;">COLOUMN 3 HEADER</th>
-</tr>
-
-<tr>
-    <td>row1,col1</td>
-    <td>row1,col2</td>
-    <td>row1,col3</td>
-</tr>
-
-<tr>
-    <td>row2,col1</td>
-    <td>row2,col2</td>
-    <td>row2,col3</td>
-</tr>
-
-<tr>
-    <td>row3,col1</td>
-    <td>row3,col2</td>
-    <td>row3,col3</td>
-</tr>
-
-</table>
-
-</body>
-</html>
+ document.write("<br><br>");
+ document.write("Number=241.5");
+ document.write("<br><br>");
+ document.write("Square root:",Math.sqrt(x));
+ document.write("<br><br>");
+ document.write("Power to 3:",Math.pow(x,3));
+ document.write("<br><br>");
+ document.write("Absolute value:",Math.abs(x));
+ document.write("<br><br>");
+ document.write("Round value:",Math.round(x));
+ document.write("<br><br>");
+ document.write("Ceil value:",Math.ceil(x));
+ document.write("<br><br>");
+ document.write("Floor value:",Math.floor(x));
+ document.write("<br><br>");
+ document.write("Pi value:",Math.PI);
+ document.write("<br><br>");
+ document.write("Max value in (5,-8,3):",Math.max(5,-8,3));
+ document.write("<br><br>");
+ document.write("Min value in (5,-8,3):",Math.min(5,-8,3));
+ document.write("<br><br>");
+ 
+</script>
+</html> 
+ 
+ 
+ 
+ 
+ 
  
