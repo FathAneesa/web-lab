@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>page</title>
+</head>
+
+<body>
+ <button type="button" onclick="colorchange();">
+ <h2>CHANGE BGCOLOR</h2>
+ </button>
+ 
+<script>
+  var color=["yellow","pink","green","red"];
+  var l=color.length;
+  var i=0;
+  
+  function colorchange()
+    
+      {
+       document.getElementsByTagName("body")[0].style.backgroundColor=color[i];
+       i=(i+1)%l;
+       
+      }
+</script>
+</body>
+</html>
