@@ -1,0 +1,142 @@
+<html>
+<body bgcolor="cyan">
+
+<h2 align="center">Online Exam</h2>
+
+<form name="examform" onsubmit="return exam()" method="get">
+   Enter your name: <input type="text" name="nm">
+   <p> 
+     1)What is the result of 25×4−30÷5?<br>
+       <input type="radio" name="one" value="94">94<br>
+       <input type="radio" name="one" value="80">80<br>
+   </p>
+   
+   <p>
+     2)What is the value of 36÷6+7×2?<br>
+       <input type="radio" name="two" value="18">18<br>
+       <input type="radio" name="two" value="20">20<br>
+       
+   </p>
+   
+   <p>
+     3)Sarah buys 5 notebooks for $3 each and 3 pens for $2 each. How much did she spend in total?<br>
+       <input type="radio" name="three" value="21">$21<br>
+        <input type="radio" name="three" value="19">$19<br>
+        
+   </p>
+   
+   <p>
+     4)What is 15+8−4?<br>
+        <input type="radio" name="four" value="18">18<br>
+        <input type="radio" name="four" value="19">19<br>
+        
+   </p>
+   
+   <p>
+     5)What is 9×5+6?<br>
+       <input type="radio" name="five" value="45">45<br>
+       <input type="radio" name="five" value="51">51<br>
+      
+  </p>
+  
+  <p>
+    6)John has 12 apples. He gives 4 apples to his friend. How many apples does John have left?<br>
+        <input type="radio" name="six" value="6">6<br>
+         <input type="radio" name="six" value="8">8<br>
+         
+  </p>
+  
+  <p>
+    7)A box contains 15 red balls and 10 blue balls. How many balls are in the box in total?<br>
+        <input type="radio" name="seven" value="20">20<br>     
+         <input type="radio" name="seven" value="25">25<br> 
+          
+  </p>
+  
+  <p>
+    8)If a pencil costs $2 and you buy 3 pencils, how much will it cost in total?<br>
+        <input type="radio" name="eight" value="6">$6<br>       
+        <input type="radio" name="eight" value="4">$4<br> 
+       
+   </p>
+   
+   <p>
+     9)What is the area of a rectangle?<br>
+         <input type="radio" name="nine" value="length+breadth">length+breadth<br>    
+         <input type="radio" name="nine" value="length*breadth">length*breadth<br>
+        
+   </p>
+   
+   <p>
+     10)What is the area of a square? <br> 
+        
+        <input type="radio" name="ten" value="2*side">2*side<br>
+        <input type="radio" name="ten" value="side*side">side*side<br>
+        
+   </p>
+   
+   <p>
+     <center> 
+       <input type="submit" value="Submit">
+         <input type="reset" value="Reset">    
+     </center>   
+   </p>
+ </form>
+</body>   
+ <head>  
+ <script>
+    function exam() {
+       var m = 0;
+
+       
+       var q1 = document.examform.one;
+       var q2 = document.examform.two;
+       var q3 = document.examform.three;
+       var q4 = document.examform.four;
+       var q5 = document.examform.five;
+       var q6 = document.examform.six;
+       var q7 = document.examform.seven;
+       var q8 = document.examform.eight;
+       var q9 = document.examform.nine;
+       var q10 = document.examform.ten;
+
+       
+       if (q1[0].checked) { 
+           m++;
+       }
+       if (q2[1].checked) { 
+           m++;
+       }
+       if (q3[0].checked) { 
+           m++;
+       }
+       if (q4[1].checked) { 
+           m++;
+       }
+       if (q5[1].checked) { 
+           m++;
+       }
+       if (q6[1].checked) { 
+           m++;
+       }
+       if (q7[1].checked) { 
+           m++;
+       }
+       if (q8[0].checked) { 
+           m++;
+       }
+       if (q9[1].checked) { 
+           m++;
+       }
+       if (q10[1].checked) { 
+           m++;
+       }
+
+       alert("Thank you for attending the online exam!!\nYour score is: " + m + " out of 10");
+       document.examform.reset();
+       return false; 
+    }
+  </script>
+  </head>
+</html>
+
